@@ -1,0 +1,42 @@
+body {
+	margin: 40px auto;
+	max-width: 1000px;
+	line-height: 1.6;
+	font-size: 18px;
+	color: #444;
+	padding: 0 10px
+}
+
+h1, h2, h3 {
+	line-height: 1.2;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+table {
+color: #333;
+font-family: Helvetica, Arial, sans-serif;
+width: 90%;
+border-collapse:
+collapse; border-spacing: 0;
+}
+
+td, th, thead {
+border: 1px solid transparent; /* No more visible border */
+height: 30px;
+transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+thead {
+background: #AAA;  /* Darken header a bit */
+font-weight: bold;
+}
+thead td{
+	background: #CCC;
+}
+
+td {
+background: #FAFAFA;
+text-align: center;
+}
+
+tr:hover td { background: #666; color: #FFF; } /* Hover cell effect! */

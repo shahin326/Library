@@ -1,0 +1,1 @@
+angular.module('BookLibrary', ['ngResource'])
