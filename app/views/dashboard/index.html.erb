@@ -12,13 +12,13 @@
     </div>
 
     <div class="col-md-12">
-      <table class="table table-striped">
+      <table class="table table-striped" id="table">
           <thead>
                   <tr>
                   <th class="col-md-2">Title</th>
                   <th class="col-md-2">Author</th>
                   <th class="col-md-3">Description</th>
-                  <th class="col-md-3">Reserved</th>
+                  <th class="col-md-3">Booked</th>
                   <th class="col-md-2">Actions</th>
                 </tr>
           </thead>
@@ -34,16 +34,16 @@
       <label>Add a new book:</label>
         <form class="form-inline" ng-submit="addBook()">
           <div class="form-group">
-            <input type="text" class="form-control" name="Title" placeholder="Title" ng-model="book.title" />
+            <input type="text" class="form-control" id="title" name="Title" placeholder="Title" ng-model="book.title" />
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="Author" placeholder="Author" ng-model="book.author" />
+            <input type="text" class="form-control" id="author" name="Author" placeholder="Author" ng-model="book.author" />
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="Description" placeholder="Description" ng-model="book.description" />
+            <input type="text" class="form-control" id="description" name="Description" placeholder="Description" ng-model="book.description" />
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="Reserved" placeholder="Reserved" ng-model="book.reserved" />
+            <input type="text" class="form-control" id="reserved" name="Reserved" placeholder="Reserved" ng-model="book.reserved" />
           </div>
           <button type="submit" class="btn btn-primary">Add</button>
         </form>
@@ -51,16 +51,16 @@
 
       <script type="text/ng-template" id="form">
               <td>
-                <input ng-model="editing.title" type="text" class="form-control" name="title" />
+                <input ng-model="editing.title" type="text" id="editTitle" class="form-control" name="title" />
               </td>
               <td>
-                <input ng-model="editing.author" type="text" class="form-control" name="author" />
+                <input ng-model="editing.author" type="text" id="editAuthor" class="form-control" name="author" />
               </td>
               <td>
-                <input ng-model="editing.description" type="text" class="form-control" name="description" />
+                <input ng-model="editing.description" type="text" id="editDescription" class="form-control" name="description" />
               </td>
               <td>
-                <input ng-model="editing.reserved" type="text" class="form-control" name="reserved" />
+                <input ng-model="editing.reserved" type="text" id="editReserved" class="form-control" name="reserved" />
               </td>
               <td>
                 <button ng-click="hideForm()" class="btn btn-default btn-xs">Cancel</button>

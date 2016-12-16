@@ -66,6 +66,18 @@ $scope.destroyBook = function(book, index) {
    );
  };
 
+ $scope.reservBook = function(book, index) {
+   Book.update($scope.book,
+     function(response, _headers) {
+       $scope.books[index] = book;
+       $scope.hideForm();
+     },
+     function(response) {
+       alert('Errors: ' + reponse.data.errors.join('. '));
+     }
+   );
+  };
+
   // checks if all inputs have been filled, if not it returns false.
     valid = function() {
       return !!$scope.book &&
