@@ -3237,3 +3237,16 @@ puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
   Rendering /Users/Sl-lAl-liN/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/Sl-lAl-liN/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.4ms)
   Rendered /Users/Sl-lAl-liN/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (141.9ms)
+Started GET "/" for ::1 at 2016-12-16 10:50:48 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 503ms (Views: 422.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/books.json" for ::1 at 2016-12-16 10:50:49 +0200
+Processing by Api::BooksController#index as JSON
+  [1m[36mBook Load (79.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+Completed 200 OK in 193ms (Views: 44.6ms | ActiveRecord: 79.6ms)
+
+
